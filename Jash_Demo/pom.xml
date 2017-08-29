@@ -9,7 +9,15 @@
 
   <name>simpleproject</name>
   <url>http://maven.apache.org</url>
-
+<configuration>
+  <archive>
+    <manifest>
+	<addClasspath>true</addClasspath>
+	<mainClass>jar.App</mainClass>
+	<classpathPrefix>dependency-jars/</classpathPrefix>
+    </manifest>
+  </archive>
+</configuration>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
